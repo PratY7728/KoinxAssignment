@@ -38,6 +38,13 @@ const calculateStandardDeviation = (prices) => {
   return Math.sqrt(variance);
 };
 
+
+app.get('/', (req, res) => {
+    res.send('Assignment done');
+  });
+
+  
+
 // stats route
 app.get('/stats', async (req, res) => {
   try {
